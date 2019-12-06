@@ -1,8 +1,8 @@
-const utils = require('../../utils/readFromDisk.js')
+const { readSimpleFileIntoArrayOfNumber } = require('../../utils')
 const {calcTotalFuelForAllModsRecursively} = require('./star2-solution')
 
 
-utils.readSimpleFileIntoArrayOfNumber('data_star2', completeStarTwo)
+readSimpleFileIntoArrayOfNumber('day1-2019/data_star2', completeStarTwo)
 
 function completeStarTwo(err, fsResponse) {
 	if (err) throw err
