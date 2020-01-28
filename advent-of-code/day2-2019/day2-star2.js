@@ -1,11 +1,10 @@
 const { processOpCodes } = require('./day2-star1')
-const expectedOutput = 19690720
 
 /** find 2 numbers (noun & verb) such that:
  * input * noun + verb = expectedOutput
  * where, 99 <= noun & verb >=0
  */
-const findNounAndVerb = (input) => {
+const findNounAndVerb = (input, expectedOutput) => {
 	let noun;
 	let verb;
 	let result;
